@@ -1,0 +1,101 @@
+.header {
+    padding: 35px 0 25px;
+    z-index: 995;
+    >nav {
+        padding: 0 70px;
+    }
+    .logo {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .burger-menu,
+    .uk-offcanvas-close {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 70px;
+
+        span,
+        span::before,
+        span::after {
+            position: absolute;
+            background-color: $black;
+            content: '';
+            height: 2px;
+            left: 0;
+        }
+
+        span {
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 1s ease-in-out;
+
+            &::before,
+            &::after {
+                transition: .3s ease-in-out;
+            }
+
+            &::before {
+                width: calc(100% - 30px);
+                top: -8px;
+            }
+
+            &::after {
+                width: calc(100% - 15px);
+                top: 8px;
+            }
+        }
+
+        &.uk-offcanvas-close svg {
+            display: none;
+        }
+
+        @include hover {
+
+            span::before,
+            span::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .uk-offcanvas {
+        &.uk-open {
+            .uk-offcanvas-close {
+                span {
+                    background-color: transparent;
+                    &::before, &::after {
+                        transition: 1s ease-in-out;
+                        width: 100%;
+                    }
+                    &::before {
+                        transform: rotate(45deg) translate(15%, 207%);
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg) translate(9%, -263%);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .uk-offcanvas-bar {
+        background-color: $white;
+
+        li {
+            a {
+                color: $black;
+                display: block;
+                transition: .3s ease-in;
+
+                @include hover {
+                    letter-spacing: 0.2em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.gallery-section {
+
+    .gallery-images {
+        margin: 0 -$nbGutterXsmall;
+        overflow: hidden;
+
+        .gallery-row {
+            display: table;
+            width: 100%;
+
+            .gallery-image {
+                background-color: $white;
+                border: $nbGutterXsmall solid transparent;
+                display: table-cell;
+                margin: 0;
+                outline: none;
+                overflow: hidden;
+                position: relative;
+                vertical-align: top;
+                transition: $nbSec ease-in-out;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                    vertical-align: middle;
+                    transition: $nbSec ease-in-out;
+                }
+
+                @include hover {
+                    img {
+                        transform: scale(.95);
+                    }
+                }
+            }
+        }
+
+        .uk-container-expand & {
+            margin: 0 $nbGutterXsmall;
+        }
+    }
+
+    .gallery-caption {
+        font-size: 14px;
+        font-weight: $light;
+        color: $black;
+    }
+}

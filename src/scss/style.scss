@@ -1,0 +1,38 @@
+//
+// Style
+//
+// Config
+@import 'config/variables.scss';
+
+// Base
+@import 'base/fonts.scss';
+@import 'base/layout.scss';
+@import 'base/typography.scss';
+
+// Helpers
+@import 'helpers/mixins.scss';
+
+// Layout / Helpers
+@import 'layout/_icon-font.scss';
+@import 'helpers/helpers.scss';
+@import 'layout/buttons.scss';
+@import 'layout/forms.scss';
+
+// UIkit
+@import "uikit/base.scss";
+@import "uikit/navbar.scss";
+@import "uikit/logo.scss";
+@import "uikit/form.scss";
+
+// Modules
+@import 'modules/banner.scss';
+@import 'modules/slider.scss';
+@import 'modules/about-section.scss';
+@import 'modules/gallery-section.scss';
+
+// Theme
+@import "style/base.scss";
+@import "style/header.scss";
+@import "style/footer.scss";
+@import "style/ie11.scss";
+@import "style/print.scss";

@@ -1,0 +1,14 @@
+<svg width="400" height="400" viewBox="0 0 350 340" xmlns="http://www.w3.org/2000/svg" class="uk-animation-stroke uk-svg" data-svg="images/stroke.svg" style="--uk-animation-stroke:394">
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M142.6 273.5H92.4L64 322h107l-28.4-48.5z"/>
+    <path fill="none" stroke="#000" stroke-width="2" d="M102 263h31v10h-31zm-61-15h102v15H41zm145.8-47.6l91.1-174.7 18.9-13.4"/>
+    <path fill="none" stroke="#000" stroke-width="2" d="M89.1 190.6L257 1.5l39.8 10.8L336.9 89"/>
+    <circle cx="338.4" cy="94.8" r="5.3" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M338.4 207.4V100.1"/>
+    <path d="M332.5 228.4a8 8 0 00-.5 2.1 6.77 6.77 0 108.2-6.1 2.36 2.36 0 01-1.8-2.3h0v-5.2" fill="none" stroke="#0045d4" stroke-linecap="round" stroke-width="2"/>
+    <circle cx="338.5" cy="212.7" r="4.2" fill="none" stroke="#0045d4" stroke-width="2"/>
+    <path fill="none" stroke="#000" stroke-width="2" d="M3 191h140v57H3zm190 10v41l-14 21h-36v-66l50 4z"/>
+    <path fill="none" stroke="#0045d4" stroke-width="2" d="M185 243l-10 15h-15v-15h25zm-25-34h26v28h-26z"/>
+    <path fill="none" stroke="#000" stroke-width="2" d="M220.2 135.2h-80.4l31 63.9"/>
+    <path fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2" d="M57 322h120v17H57z"/>
+    <path fill="none" stroke="#000" stroke-width="2" d="M257 1.5l77 89.2"/>
+</svg>
