@@ -1,0 +1,51 @@
+.footer {
+    .border-top {
+        animation: lineWidth .5s forwards;
+        position: absolute;
+        left: 0;
+        content: '';
+        height: 3px;
+        width: 0;
+        top: 0;
+        background-color: $golden;
+    }
+
+    ul {
+        padding-left: 0;
+        li {
+            &:not(:first-of-type) {
+                padding-left: 20px;
+            }
+
+            a {
+                &::before {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMedium) {
+        .uk-position-relative>.uk-flex {
+            flex-direction: column;
+        }
+    }
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+
+    ul {
+        justify-content: center;
+    }
+}
+
+@keyframes lineWidth {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

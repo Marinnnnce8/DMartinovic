@@ -3,6 +3,7 @@
 	src: url('../fonts/svgicons.woff2') format('woff2'),
 		url('../fonts/svgicons.woff') format('woff'),
 		url('../fonts/svgicons.ttf') format('truetype');
+		font-display: swap;
 }
 
 @mixin font-styles {
@@ -35,26 +36,32 @@
 	@if $filename == external-link {
 		$char: '\E003';
 	}
-	@if $filename == instagram-logo {
+	@if $filename == facebook {
 		$char: '\E004';
 	}
-	@if $filename == live-streaming {
+	@if $filename == instagram-logo {
 		$char: '\E005';
 	}
-	@if $filename == play-button-arrowhead {
+	@if $filename == live-streaming {
 		$char: '\E006';
 	}
-	@if $filename == right-arrow {
+	@if $filename == play-button-arrowhead {
 		$char: '\E007';
 	}
-	@if $filename == rounded-corner-white-1 {
+	@if $filename == right-arrow {
 		$char: '\E008';
 	}
-	@if $filename == rounded-corner-white {
+	@if $filename == rounded-corner-white-1 {
 		$char: '\E009';
 	}
-	@if $filename == time {
+	@if $filename == rounded-corner-white {
 		$char: '\E00A';
+	}
+	@if $filename == time {
+		$char: '\E00B';
+	}
+	@if $filename == twitter {
+		$char: '\E00C';
 	}
 
 	@return $char;
@@ -84,6 +91,9 @@
 .font-external-link {
 	@include font(external-link);
 }
+.font-facebook {
+	@include font(facebook);
+}
 .font-instagram-logo {
 	@include font(instagram-logo);
 }
@@ -105,4 +115,7 @@
 .font-time {
 	@include font(time);
 }
-
+.font-twitter {
+	@include font(twitter);
+}
+

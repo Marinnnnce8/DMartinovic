@@ -3,14 +3,23 @@
 .banner {
 	margin-bottom: 20px;
 	position: relative;
+
 	>a svg {
 		width: 68px;
+
 		@include hover {
 			transform: translateY(15%);
 			color: $black;
 		}
 	}
+
+	@media (max-width: $breakpointTabletPort) {
+		>.uk-flex {
+			flex-direction: column;
+		}
+	}
 }
+
 .banner-text {
 	padding-left: 50px;
 	animation: slideToRight .5s ease-in-out forwards;
@@ -19,15 +28,41 @@
 	top: 35%;
 	left: 50%;
 	width: 70%;
+
+	@media (max-width: $breakpointMedium) {
+		padding-left: 0;
+	}
+	@media (max-width: $breakpointTabletPort) {
+		max-width: 280px;
+		width: 100%;
+	}
 }
+
+.banner-text-container, .banner-img-container {
+	width: 50%;
+	@media (max-width: $breakpointTabletPort) {
+		width: 100%;
+	}
+}
+
+.banner-text-container {
+	@media (max-width: $breakpointTabletPort) {
+		min-height: 50vh;
+	}
+}
+
 .banner-img {
 	background-color: $white-dirty;
 	overflow: hidden;
 	position: relative;
 	height: 100%;
 	width: 100%;
+
 	img {
 		animation: fallImg 5s .5s ease-in-out;
+	}
+	@media (max-width: $breakpointTabletPort) {
+		min-height: 50vh;
 	}
 }
 
@@ -36,24 +71,31 @@
 	0% {
 		transform: translate(-50%, -50%) rotate(-22deg);
 	}
+
 	10% {
 		transform: translate(-50%, -50%) rotate(19deg);
 	}
+
 	20% {
 		transform: translate(-50%, -50%) rotate(-20deg);
 	}
+
 	30% {
 		transform: translate(-50%, -50%) rotate(15deg);
 	}
+
 	45% {
 		transform: translate(-50%, -50%) rotate(-15deg);
 	}
+
 	70% {
 		transform: translate(-50%, -50%) rotate(15deg);
 	}
+
 	90% {
 		transform: translate(-50%, -50%) rotate(-5deg);
 	}
+
 	100% {
 		transform: translate(-50%, -50%) rotate(0deg);
 	}
@@ -64,6 +106,7 @@
 		opacity: 0;
 		transform: translateX(-300%);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateX(-50%);

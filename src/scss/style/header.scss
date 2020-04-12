@@ -7,6 +7,11 @@
     .logo {
         text-transform: uppercase;
         font-size: 20px;
+        font-weight: $black-weight;
+        @include hover {
+            color: $black;
+            text-shadow: 2px 1px 3px rgba($black, .3);
+        }
     }
 
     .burger-menu,
@@ -91,11 +96,25 @@
                 color: $black;
                 display: block;
                 transition: .3s ease-in;
+                text-transform: uppercase;
 
                 @include hover {
                     letter-spacing: 0.2em;
                 }
             }
+        }
+    }
+    @media (max-width: $breakpointTabletPort) {
+        >nav {
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 16px;
+        }
+        .burger-menu, .uk-offcanvas-close {
+            right: 20px;
+            width: 48px;
+            height: 48px;
         }
     }
 }

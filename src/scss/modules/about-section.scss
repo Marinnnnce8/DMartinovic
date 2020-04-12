@@ -1,13 +1,110 @@
 .about-section {
     .uk-card-body {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 25px 0 40px;
+    }
+
+    .uk-card-media-top {
+        min-height: 400px;
+    }
+
+    >.uk-container {
+        margin-top: 30px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        .about-cards {
+            &:nth-of-type(odd) {
+                .uk-card:nth-of-type(even) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+
+            &:nth-of-type(even) {
+                .uk-card:nth-of-type(odd) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+
+            .uk-card:not(:last-of-type) {
+                margin-bottom: 45px;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .uk-card-media-top {
+            min-height: 350px;
+        }
+    }
+
+    @media (max-width: $breakpointMedium) {
+        .uk-card-media-top {
+            min-height: 400px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        .uk-card-media-top {
+            min-height: 300px;
+        }
+    }
+
+    figure {
+        display: table;
+        margin-top: 0;
+        outline: none;
+
+        a {
+            cursor: zoom-in;
+            display: block;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            height: auto;
+
+            @media (max-width: $breakpointMobile) {
+                width: 100%;
+            }
+        }
+    }
+
+    figcaption {
+        caption-side: bottom;
+        display: table-caption;
+        font-size: 13px;
+        padding: 1rem 1.8rem;
+        text-align: center;
+        color: $white;
+    }
+
+    .align-center {
+        clear: both;
+        margin: $nbSpace auto;
+        text-align: center;
     }
 }
 
 .about-title-wrap {
     background-color: $white;
     z-index: 990;
+    padding: 40px 0 5px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: calc(100% - 13px);
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        box-shadow: 0 11px 15px 15px rgba($white, 1);
+        z-index: 1;
+        height: 13px;
+    }
 }
 
 .about-box {

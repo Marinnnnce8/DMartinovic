@@ -1,12 +1,14 @@
 @media print {
 	.header,
 	.footer,
+	.banner,
 	.nb-block-form,
 	.TextformatterVideoEmbed,
 	.uk-button,
 	.uk-breadcrumb,
 	.uk-pagination,
-	.uk-modal {
+	.uk-modal,
+	.gallery-section {
 		display: none !important;
 	}
 }

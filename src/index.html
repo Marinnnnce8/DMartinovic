@@ -8,15 +8,13 @@
 
 	<title>Damjan Martinović Art</title>
 	<meta name='description' content='This is a meta description'>
-	<!-- <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
 	<link rel="manifest" href="./favicon/site.webmanifest">
-	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- <link rel='shortcut icon' href='favicon.ico'> -->
 	<link rel='stylesheet' href='./css/uikit.min.css' />
 	<link rel='stylesheet' href='./css/style.min.css' />
 </head>
@@ -40,24 +38,22 @@
 						<li><a class="uk-padding-small" href="#banner" data-uk-scroll>Start</a></li>
 						<li><a class="uk-padding-small" href="#about" data-uk-scroll>About me</a></li>
 						<li><a class="uk-padding-small" href="#gallery" data-uk-scroll>My gallery</a></li>
-						<li><a class="uk-padding-small" href="#contact" data-uk-scroll>Contact me</a></li>
+						<li><a class="uk-padding-small" href="#follow" data-uk-scroll>Follow me</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<section class="banner" id="banner">
-		<!-- <img class="uk-animation-stroke" width="400" height="400" src="./img/stroke.svg" alt="" data-uk-svg="stroke-animation: true">
-		<img class="uk-animation-stroke" width="450" height="400" src="./img/picture.svg" alt="" data-uk-svg="stroke-animation: true;animation-duration:5000s"> -->
+	<section class="banner" data-uk-height-viewport id="banner">
 		<div class="uk-flex uk-flex-between">
-			<div class="uk-width-1-2 uk-height-viewport uk-position-relative">
+			<div class="uk-height-viewport uk-position-relative banner-text-container">
 				<div class="banner-text">
 					<h1>Damjan Martinović Art</h1>
-					<span>- Lorem ipsum dolor sit amet</span>
+					<span class="uk-visible@s">- Lorem ipsum dolor sit amet</span>
 				</div>
 			</div>
-			<div class="uk-width-1-2">
+			<div class="banner-img-container">
 				<div class="banner-img uk-position-relative">
 					<img class="uk-position-center" src="./img/frame-trans-middle.png" alt="frame">
 				</div>
@@ -68,18 +64,17 @@
 	</section>
 
 	<section id="about" class="about-section">
-		<div class="about-title-wrap uk-text-center uk-padding uk-padding-remove-horizontal"
-			data-uk-sticky="top:0; bottom: .sticky-deactivate">
+		<div class="about-title-wrap uk-text-center" data-uk-sticky="top:0; bottom: .sticky-deactivate">
 			<h2>About me</h2>
 		</div>
 		</div>
 		<div class="uk-container">
-			<div class="uk-flex">
-				<div class="uk-width-1-2 uk-padding uk-padding-remove-vertical">
-					<div uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true"
-						class="uk-card uk-padding uk-padding-remove-horizontal">
-						<div class="uk-card-media-top">
-							<img src="./img/frame-trans-middle.png" data-uk-img alt="image">
+			<div class="uk-child-width-1-2@m" data-uk-grid data-uk-lightbox="animation: fade">
+				<div class="about-cards">
+					<div uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true" class="uk-card">
+						<div class="uk-card-media-top uk-background-cover uk-position-relative" data-uk-img
+							style="background-image: url('./img/frame-trans-middle.png')">
+							<a class="uk-position-cover" href="./img/slide-1.jpg" data-alt="Image"></a>
 						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title">Lorem ipsum</h3>
@@ -91,8 +86,11 @@
 								est laborum.</p>
 						</div>
 					</div>
-					<div uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: true"
-						class="uk-card uk-padding uk-padding-remove-horizontal">
+					<div uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: true" class="uk-card">
+						<div class="uk-card-media-top uk-background-cover uk-position-relative" data-uk-img
+							style="background-image: url('./img/frame-trans-middle.png')">
+							<a class="uk-position-cover" href="./img/slide-2.jpg" data-alt="Image"></a>
+						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title">Lorem ipsum</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -101,15 +99,15 @@
 								reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
 								sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 								est laborum.</p>
-						</div>
-						<div class="uk-card-media-top">
-							<img src="./img/frame-trans-middle.png" data-uk-img alt="image">
 						</div>
 					</div>
 				</div>
-				<div class="uk-width-1-2 uk-padding uk-padding-remove-vertical">
-					<div uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: true"
-						class="uk-card uk-padding uk-padding-remove-horizontal">
+				<div class="about-cards">
+					<div uk-scrollspy="cls: uk-animation-fade; delay: 1000; repeat: true" class="uk-card">
+						<div class="uk-card-media-top uk-background-cover uk-position-relative" data-uk-img
+							style="background-image: url('./img/frame-trans-middle.png')">
+							<a class="uk-position-cover" href="./img/slide-3.jpg" data-alt="Image"></a>
+						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title">Lorem ipsum</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -119,14 +117,11 @@
 								sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 								est laborum.</p>
 						</div>
-						<div class="uk-card-media-top">
-							<img src="./img/frame-trans-middle.png" data-uk-img alt="image">
-						</div>
 					</div>
-					<div uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true"
-						class="uk-card uk-padding uk-padding-remove-horizontal">
-						<div class="uk-card-media-top sticky-deactivate">
-							<img src="./img/frame-trans-middle.png" data-uk-img alt="image">
+					<div uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true" class="uk-card">
+						<div class="uk-card-media-top uk-background-cover uk-position-relative" data-uk-img
+							style="background-image: url('./img/frame-trans-middle.png')">
+							<a class="uk-position-cover" href="./img/slide-4.jpg" data-alt="Image"></a>
 						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title">Lorem ipsum</h3>
@@ -151,8 +146,8 @@
 			<div class='gallery-images' data-uk-lightbox="animation:fade"
 				data-uk-scrollspy='cls:uk-animation-fade;delay:128;target:> .gallery-row > .gallery-image;'>
 				<div class='gallery-row'>
-					<a href='https://aws.nbcommunication.com/template/img/placeholder-columns.jpg'
-						class='gallery-image' data-alt='This gallery image has a caption.'
+					<a href='https://aws.nbcommunication.com/template/img/placeholder-columns.jpg' class='gallery-image'
+						data-alt='This gallery image has a caption.'
 						data-caption='<div>This gallery image has a caption.</div>'>
 						<img alt='This gallery image has a caption.' width='1151' height='768'
 							src='./img/frame-trans.png' data-src='./img/frame-trans.png' data-uk-img>
@@ -169,8 +164,8 @@
 						<img alt='Gallery Block' width='1151' height='768' src='./img/frame-trans.png'
 							data-src='./img/frame-trans.png' data-uk-img>
 					</a>
-					<a href='https://aws.nbcommunication.com/template/img/placeholder-town.jpg'
-						class='gallery-image' data-alt='This gallery image also has a caption with HTML.'
+					<a href='https://aws.nbcommunication.com/template/img/placeholder-town.jpg' class='gallery-image'
+						data-alt='This gallery image also has a caption with HTML.'
 						data-caption='<div>This <em>gallery</em> image also has a <strong>caption</strong> with HTML.</div>'>
 						<img alt='This gallery image also has a caption with HTML.' width='1151' height='768'
 							src='./img/frame-trans.png' data-src='./img/frame-trans.png' data-uk-img>
@@ -182,26 +177,37 @@
 					</a>
 				</div>
 			</div>
-			<div class='gallery-caption uk-text-center uk-margin-small-top'>A Gallery Caption</div>
+			<!-- <div class='gallery-caption uk-text-center uk-margin-small-top'>A Gallery Caption</div> -->
 		</div>
-
 	</section>
 
-	<section id="contact">
-		<h2>Contact me</h2>
-	</section>
-
-
-	<footer>
-		<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-				href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	<footer class="footer" id="follow" data-uk-scrollspy="target: .line; cls: border-top; delay: 500">
+		<div class="uk-container">
+			<div class="uk-position-relative uk-padding-small uk-padding-remove-horizontal">
+				<span class="line" role="presentation"></span>
+				<div class="uk-flex uk-flex-between uk-flex-middle">
+					<div class="uk-width-1-2@m uk-width-1-1">
+						<span class="copyright">2020 &copy; All rights reserved</span>
+					</div>
+					<ul class="uk-flex uk-flex-right uk-width-1-2@m uk-width-1-1">
+						<li><a href="#" class="font-facebook" aria-label="Visit my Facebook account" target="_blank"
+								rel="noopener noreferrer"></a></li>
+						<li><a href="#" class="font-instagram-logo" aria-label="Visit my Instagram account"
+								target="_blank" rel="noopener noreferrer"></a></li>
+						<li><a href="#" class="font-twitter" aria-label="Visit my Twitter account" target="_blank"
+								rel="noopener noreferrer"></a></li>
+					</ul>
+				</div>
+				<div class="read-only">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+						title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+						title="Flaticon">www.flaticon.com</a></div>
+			</div>
+		</div>
 	</footer>
 
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'
-		integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
 	<script src='./js/uikit.min.js'></script>
 	<script src='./js/uikit-icons.min.js'></script>
-	<script src='./js/theme.min.js'></script>
+	<!-- <script src='./js/theme.min.js'></script> -->
 </body>
 
 </html>
