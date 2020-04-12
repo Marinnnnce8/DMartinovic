@@ -1,13 +1,16 @@
 .header {
     padding: 35px 0 25px;
     z-index: 995;
+
     >nav {
         padding: 0 70px;
     }
+
     .logo {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: $black-weight;
+
         @include hover {
             color: $black;
             text-shadow: 2px 1px 3px rgba($black, .3);
@@ -71,10 +74,13 @@
             .uk-offcanvas-close {
                 span {
                     background-color: transparent;
-                    &::before, &::after {
+
+                    &::before,
+                    &::after {
                         transition: 1s ease-in-out;
                         width: 100%;
                     }
+
                     &::before {
                         transform: rotate(45deg) translate(15%, 207%);
                     }
@@ -104,14 +110,18 @@
             }
         }
     }
+
     @media (max-width: $breakpointTabletPort) {
         >nav {
             padding: 0 20px;
         }
+
         .logo {
             font-size: 16px;
         }
-        .burger-menu, .uk-offcanvas-close {
+
+        .burger-menu,
+        .uk-offcanvas-close {
             right: 20px;
             width: 48px;
             height: 48px;

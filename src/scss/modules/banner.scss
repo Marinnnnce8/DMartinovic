@@ -29,6 +29,12 @@
 	left: 50%;
 	width: 70%;
 
+	>span {
+		font-size: 28px;
+		color: $black;
+		font-weight: $light;
+	}
+
 	@media (max-width: $breakpointMedium) {
 		padding-left: 0;
 	}

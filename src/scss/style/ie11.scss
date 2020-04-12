@@ -1,3 +1,33 @@
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+    .banner-img img {
+        animation: none;
+    }
+}
 
+
+//Edge css
+@supports (-ms-ime-align:auto) {
+    .burger-menu {
+        span {
+            &::before {
+                width: 20px !important;
+                transition: .3s ease-in-out;
+            }
+
+            &::after {
+                width: 35px !important;
+                transition: .3s ease-in-out;
+            }
+        }
+
+        @include hover {
+
+            span::before,
+            span::after {
+                width: 50px !important;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
 }
