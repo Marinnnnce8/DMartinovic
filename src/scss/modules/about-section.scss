@@ -105,6 +105,12 @@
         z-index: 1;
         height: 13px;
     }
+    @media (max-width: $breakpointMedium) {
+        position: relative !important;// sass-lint:disable-line no-important
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .about-box {
